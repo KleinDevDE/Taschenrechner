@@ -1,0 +1,165 @@
+object Home: THome
+  Left = 262
+  Height = 243
+  Top = 125
+  Width = 320
+  Caption = 'Home'
+  ClientHeight = 243
+  ClientWidth = 320
+  Color = clForm
+  OnCreate = FormCreate
+  LCLVersion = '1.6.4.0'
+  object Taschenrechner: TStaticText
+    Left = 0
+    Height = 33
+    Top = 0
+    Width = 320
+    Align = alTop
+    Alignment = taCenter
+    Caption = 'Taschenrechner'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -27
+    Font.Name = 'Prototype'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 0
+  end
+  object Multiplizieren: TButton
+    Left = 32
+    Height = 29
+    Top = 192
+    Width = 96
+    Caption = 'Multiplizieren'
+    OnClick = MultiplizierenClick
+    TabOrder = 1
+  end
+  object Dividieren: TButton
+    Left = 192
+    Height = 29
+    Top = 192
+    Width = 96
+    Caption = 'Dividieren'
+    OnClick = DividierenClick
+    TabOrder = 2
+  end
+  object Addieren: TButton
+    Left = 32
+    Height = 32
+    Top = 152
+    Width = 96
+    Caption = 'Addieren'
+    OnClick = AddierenClick
+    TabOrder = 3
+  end
+  object Subtrahieren: TButton
+    Left = 192
+    Height = 32
+    Top = 152
+    Width = 96
+    Caption = 'Subtrahieren'
+    OnClick = SubtrahierenClick
+    TabOrder = 4
+  end
+  object Num1: TEdit
+    Left = 88
+    Height = 23
+    Top = 80
+    Width = 144
+    TabOrder = 5
+    Text = 'Num1'
+  end
+  object Num2: TEdit
+    Left = 88
+    Height = 23
+    Top = 120
+    Width = 144
+    TabOrder = 6
+    Text = 'Num2'
+  end
+  object Ergebnis: TStaticText
+    Left = 8
+    Height = 25
+    Top = 48
+    Width = 300
+    Alignment = taRightJustify
+    AutoSize = True
+    Caption = 'Ergebnis'
+    Color = clWhite
+    Constraints.MinHeight = 25
+    Constraints.MinWidth = 300
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Arial Narrow'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+    ParentColor = False
+    TabOrder = 7
+    Transparent = False
+  end
+  object ToogleDebug: TBitBtn
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Side = asrBottom
+    Left = 295
+    Height = 27
+    Top = 0
+    Width = 24
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    AutoSize = True
+    Glyph.Data = {
+      36040000424D3604000000000000360000002800000010000000100000000100
+      20000000000000040000640000006400000000000000000000002727CD402727
+      CD772727CD002727CD002727CD002727CD002727CD002727CD002727CD002727
+      CD002727CD002727CD002727CD002727CD002727CD772727CD402727CD8A2727
+      CDFF2727CD002727CD002727CD002727CD002727CD392727CD282727CD282727
+      CD392727CD002727CD002727CD002727CD002727CDFF2727CD8B2727CD462727
+      CDFF2727CD1B2727CD002727CD002727CD792727CDFF2727CD4D2727CD4D2727
+      CDFF2727CD792727CD002727CD002727CD1D2727CDFF2727CD462727CD002727
+      CDDE2727CDF92727CD102727CD5C2727CDFF2727CDFF2727CD322727CD322727
+      CDFF2727CDFF2727CD5C2727CD102727CDF92727CDDF2727CD002727CD002727
+      CD072727CDD32727CDFF2727CDFF2727CDFF2727CDFF2727CD362727CD362727
+      CDFF2727CDFF2727CDFF2727CDFF2727CDD32727CD072727CD002727CD002727
+      CD002727CD002727CD982727CDFF2727CDFF2727CDFF2727CD352727CD352727
+      CDFF2727CDFF2727CDFF2727CD982727CD002727CD002727CD002727CDCA2727
+      CDF62727CDF02727CDEF2727CDFF2727CDFF2727CDFF2727CD272727CD272727
+      CDFF2727CDFF2727CDFF2727CDEF2727CDF02727CDF62727CDCA2727CD622727
+      CD7C2727CD722727CDDC2727CDFF2727CDFF2727CDFF2727CDE82727CDE82727
+      CDFF2727CDFF2727CDFF2727CDDC2727CD722727CD7D2727CD652727CD002727
+      CD002727CD002727CDE52727CDFF2727CDCA2727CD822727CD782727CD772727
+      CD802727CDC42727CDFF2727CDE42727CD002727CD002727CD002727CD002727
+      CD002727CDD12727CDEC2727CD362727CD2E2727CD5B2727CD6B2727CD6B2727
+      CD5A2727CD282727CD2A2727CDEB2727CDD42727CD002727CD002727CD002727
+      CD612727CDFF2727CD002727CD172727CDFF2727CDFF2727CDFF2727CDFF2727
+      CDFF2727CDFF2727CD1B2727CD002727CDFF2727CD612727CD002727CD002727
+      CDD12727CDD32727CD002727CDA12727CDFF2727CDFF2727CDFF2727CDFF2727
+      CDFF2727CDFF2727CDA32727CD002727CDD32727CDD12727CD002727CD002727
+      CDFF2727CDBB2727CD002727CD5C2727CDFF2727CDFF2727CDFF2727CDFF2727
+      CDFF2727CDFF2727CD5C2727CD002727CDBA2727CDFF2727CD002727CD002727
+      CD612727CD412727CD002727CD002727CD602727CDFB2727CDFF2727CDFF2727
+      CDFB2727CD602727CD002727CD002727CD412727CD612727CD002727CD002727
+      CD002727CD002727CD002727CD002727CD002727CD562727CDFF2727CDFF2727
+      CD562727CD002727CD002727CD002727CD002727CD002727CD002727CD002727
+      CD002727CD002727CD002727CD002727CD002727CD002727CD802727CD802727
+      CD002727CD002727CD002727CD002727CD002727CD002727CD00
+    }
+    OnClick = ToogleDebugClick
+    Spacing = 0
+    TabOrder = 8
+  end
+  object DebugText: TStaticText
+    Left = 0
+    Height = 14
+    Top = 224
+    Width = 319
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clMaroon
+    Font.Height = -13
+    Font.Name = 'Calibri Light'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 9
+  end
+end

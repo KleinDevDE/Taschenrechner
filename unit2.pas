@@ -1,0 +1,30 @@
+unit Unit2;
+
+{$mode objfpc}{$H+}
+
+interface
+
+uses
+  Classes, SysUtils;
+
+
+type
+  TMyClass = class
+  private
+  public
+    function checkNumbs(Numb1:string, Numb2:string);
+  published
+    property SomeVar: integer read GetSomeVar write SetSomeVar default 0;
+  end;
+
+
+implementation
+
+
+function checkNumbs(Numb1:string,Numb2:string);
+begin
+
+end;
+
+end.
+
